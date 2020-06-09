@@ -242,7 +242,7 @@
             <li>
                 <ol class="w3-ol">
                     <li> S. Mohammadinejad, J. V. Deshmukh, A. G. Puranic, M. Vazquez-Chanlatte, A. Donz&eacute;,
-                    <div class="w3-dropdown-hover"><i> Interpretable classification of time-series data using efficient enumerative techniques</i>
+                    <div class="w3-dropdown-hover"><i>Interpretable classification of time-series data using efficient enumerative techniques</i>
                         <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
                             <div class="w3-container">
                                 <p>
@@ -269,8 +269,264 @@
                         </div>
                     </div>, HSCC 2020.
                     <a href="./hscc2020.pdf"><i class="far fa-file-pdf"></i></a> &nbsp;
-                    <a href="./hscc2020.bib/"><i class="fa fa-quote-left"></i></a>
+                    <a href="./hscc2020.bib/"><i class="fa fa-quote-left"></i></a> &nbsp;
+                    <a href="https://www.youtube.com/watch?v=M0q07qLiuYA"><i class="fa fa-youtube-play"></i></a> 
                     </li>
+
+                    <li> S. Mohammadinejad, J. V. Deshmukh, A. G. Puranic,
+                    <div class="w3-dropdown-hover"><i>Mining Environment Assumptions for Cyber-Physical System Models</i>
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                Given a black-box system with inputs and outputs, and a correctness
+                                specification for the outputs, mines assumptions on the input
+                                (i.e. the environment) for the corresponding outputs to satisfy the
+                                given correctness spec. The input assumptions are assumed to be 
+                                expressible in STL. The mining algorithm enumerates PSTL formulas
+                                and uses decision trees on the space of robustness values induced
+                                by STL formulas obtained by sampling the parameter space of the PSTL
+                                formula. Learned decision tree is then converted into an STL formula
+                                that constitutes the environment assumption. Uses falsification to
+                                refine the environment assumption (eliminate inputs that do not 
+                                satisfy the output requirements). 
+                                </p>
+                            </div>
+                        </div>
+                    </div>, ICCPS 2020.
+                    <a href="https://ieeexplore.ieee.org/document/9096037"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./iccps2020.bib/"><i class="fa fa-quote-left"></i></a> &nbsp;
+                    <a href="https://www.youtube.com/watch?v=DlpWqClpn9A"><i class="fa fa-youtube-play"></i></a> 
+                    </li>
+                    
+                    <li> S. Gao, J. Kapinski, J. V. Deshmukh, N. Roohi, A. Solar-Lezama, N. Ar&eacute;chiga, S. Kong,
+                    <div class="w3-dropdown-hover"><i> Numerically-Robust Inductive Proof Rules for Continuous Dynamical Systems</i>
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                We formulate numerically-robust inductive proof rules for unbounded stability and safety
+                                properties of continuous dynamical systems.  These induction rules robustify standard
+                                notions of Lyapunov functions and barrier certificates so that they can tolerate small
+                                numerical errors. In this way, numerically-driven decision procedures can
+                                establish a sound and relative-complete proof system for unbounded properties of very 
+                                general nonlinear systems. We demonstrate the effectiveness of the proposed rules for
+                                rigorously verifying unbounded properties of various nonlinear systems, including a
+                                challenging powertrain control model. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>, CAV 2019.
+                    <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-25543-5_9"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./cav19.bib/"><i class="fa fa-quote-left"></i></a>
+                    </li>
+
+                    <li> A. Balakrishnan, A. G. Puranic, X. Qin, A. Dokhanchi, J. V. Deshmukh, H. B. Amor, G. Fainekos,
+                    <div class="w3-dropdown-hover"><i>Specifying and Evaluating Quality Metrics for Vision-based Perception Systems</i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                Convolutional Neural Networks have been proposed for identifying objects in 
+                                images. In self-driving cars, these CNNs detect objects in frames of a video.
+                                While CNNs like SqueezeDet and Yolo have shown a lot of promise at fast one-shot
+                                object detection, they can make mistakes because they do not integrate temporal
+                                information across frames. We formulate TQTL -- an extension to STL to reason
+                                about sanity conditions that an object detector must satisfy while detecting
+                                objects across multiple frames (e.g. persistence of labels for the same object,
+                                constraints imposed by physical laws of motion, etc.). TQTL shows that both
+                                SqueezeDet and Yolo can miss detecting objects, detect phantom objects, and 
+                                change bounding boxes of the same object across frames in ways that can confuse
+                                a downstream decision-making system. A cool feature of using TQTL is that you
+                                do not need any ground truth labels! We may not be able to check if a hippopotamus
+                                is indeed labeled a hippopotamus, but we will certaintly detect if the CNN
+                                changes its label to velociraptor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, DATE 2019.
+                    <a href=""><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./cav19.bib/"><i class="fa fa-quote-left"></i></a>
+                    </li>
+                    
+                    <li> M. Wu, J. Wang, J. V. Deshmukh, C. Wang,
+                    <div class="w3-dropdown-hover"><i>Shield Synthesis for Real: Enforcing Safety in Cyber-Physical Systems 
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                This paper explores an SMT-based formulation for runtime enforcement of an STL property,
+                                utilizing previous work by Chao Wang's group on synthesizing Boolean shields for LTL 
+                                properties.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, FMCAD 2019.
+                    <a href="https://ieeexplore.ieee.org/document/8894264"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./fmcad19.bib/"><i class="fa fa-quote-left"></i></a>
+                    </li>
+                    
+                    <li> J. V. Deshmukh, J. Kapinski, T. Yamaguchi, D. V. Prokhorov,
+                    <div class="w3-dropdown-hover"><i>Learning Deep Neural Network Controllers for Dynamical Systems with Safety Guarantees
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                The use of neural networks for control has been on the rise, partly due to the successes
+                                of deep reinforcement learning techniques. The question that we broach in this paper is
+                                the following: is it possible to train the neural network controller in such a way that
+                                the system always remains safe? We answer this question in the affirmative using the
+                                formalism of control barrier functions.  A control barrier function guarantees that for
+                                every state of the given control system, there exists a control input that keeps the
+                                system safe.  That is, it guarantees that the system trajectories never leave a
+                                designated safe set of states. In our setup, we assume that the user provides us a CBF,
+                                and the neural network controller is trained to respect the CBF conditions. We check
+                                the latter using the nonlinear SMT solver dReal. If dReal gives a counterexample, we
+                                incorporate this counterexample in the cost function for training the network, which
+                                guarantees that this counterexample (and hopefully a robust region around it) will
+                                satisfy the CBF conditions. This yields a verification-in-the-loop reinforcement 
+                                learning procedure that produces correct-by-construction neural network controllers.
+                                <b> The version here fixes an unfortunate typo in Equation 5 of the official version;
+                                essentially the sup and inf operators appear swapped in the official version 
+                                <a href="https://ieeexplore.ieee.org/document/8942130">here</a> </b>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, ICCAD 2019.
+                    <a href="./iccad2019.pdf"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./iccad.bib/"><i class="fa fa-quote-left"></i></a>
+                    </li>
+                    
+                    <li> A. Balakrishnan, J. V. Deshmukh,
+                    <div class="w3-dropdown-hover"><i>Structured Reward Shaping using Signal Temporal Logic specifications
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                Deep Reinforcement Learning uses custom-designed reward functions to help
+                                pick the desired behavior of a closed-loop control system. User-created
+                                state-based reward functions are susceptible to reward hacking, where the
+                                agent learns an undesirable behavior because the user did not foresee how
+                                the agent could maximize expected long term rewards through unexpected policies
+                                that can be both undesirable and unsafe. The fix is reward shaping: careful
+                                crafting of rewards; of course, this can be error prone as well. Our solution
+                                is to express desired high-level behavior using the formalism of Signal Temporal
+                                Logic (STL). We also formulate an algorithm to assign state-based rewards 
+                                by computing the quantitative semantics of the given STL specification over 
+                                a bounded horizon (similar to performing a rollout). Our algorithm shows 
+                                that using STL-based rewards potentially allows deep RL to converge faster to
+                                a safer policy.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, IROS 2019.
+                    <a href="./iros19.pdf"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./iros19.bib/"><i class="fa fa-quote-left"></i></a>
+                    </li>
+
+                    <li> D. Nic&#780;kovic&#769;, X. Qin, T. Ferr&egrave;re, C. Mateis, J. V. Deshmukh,
+                    <div class="w3-dropdown-hover"><i>Shape Expressions for Specifying and Extracting Signal Features
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                Shape Expressions (SEs) are like regular expressions where atomic symbols 
+                                specif shapes. While regexps are used for pattern matching in strings,
+                                SEs are used for pattern matching in time-series data (i.e. signals). 
+                                Basic shapes can include lines, polynomial curves, exponential curves, 
+                                sinusoids, etc. The language of SEs includes unions and Kleene star in 
+                                addition to basic shapes. While a signal can exactly match a SE, we
+                                also allow noisy matches, i.e. where a signal segment may be at a bounded 
+                                deviation from a constituent basic shape in the SE. We typically use
+                                statistical measures such as mean squared error (MSE) for measuring
+                                such deviations. Thus, a SE corresponds to both an exact language over
+                                signals as well as a noisy language (for a given error threshold). In
+                                this paper, we introduce SEs, and give an automata-based algorithm for
+                                monitoring an SE. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>, RV 2019.
+                    <a href="./rv19.pdf"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./rv19.bib/"><i class="fa fa-quote-left"></i></a> <br>
+                    <i> Recipient of the RV 2019 Best Paper Award </i>
+                    </li>
+
+                    <li> C. E. Tuncali, J. Kapinski, H. Ito, J. V. Deshmukh,
+                    <div class="w3-dropdown-hover"><i>Reasoning about safety of learning-enabled components in autonomous cyber-physical systems
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                We use simulation-guided techniques to learn a barrier certificate to prove the safety
+                                of a neural network-controlled dynamical system.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, DAC 2018.
+                    <a href="./https://dl.acm.org/doi/10.1145/3195970.3199852"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./dac18.bib/"><i class="fa fa-quote-left"></i></a> <br>
+                    </li>
+                    
+                    <li> J. V. Deshmukh, P. Kyriakis, P. Bogdan
+                    <div class="w3-dropdown-hover"><i>Stochastic Temporal Logic Abstractions: Challenges and Opportunities
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                This invited paper introduces Stochastic Temporal Logic, and the challenges and solution
+                                approaches to some interesting problems in this logic.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, FORMATS 2018.
+                    <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-00151-3_1"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./formats18.bib/"><i class="fa fa-quote-left"></i></a> <br>
+                    </li>
+
+                    <li> B. Bonakdarpour, J. V. Deshmukh, M. Pajic
+                    <div class="w3-dropdown-hover"><i>Opportunities and Challenges in Monitoring Cyber-Physical Systems Security
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                This invited paper outlines the challenges in monitoring the security, privacy,
+                                information leakage in CPS applications and some tentative solution approaches based
+                                on hyper-properties.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, ISOLA 2018.
+                    <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-03427-6_2"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./isola18.bib/"><i class="fa fa-quote-left"></i></a> <br>
+                    </li>
+
+                    <li> J. V. Deshmukh, R. Majumdar, X. Jin, V. S. Prabhu,
+                    <div class="w3-dropdown-hover"><i>Parameter optimization in control software using statistical fault
+                    localization techniques,
+                    </i> 
+                        <div class="w3-dropdown-content w3-card-4 w3-khakhi" style="width:600px">
+                            <div class="w3-container">
+                                <p>
+                                This paper proposes using the idea of performing fault localization using statistical
+                                techniques. In software testing, tools such as Tarantula and later extensions showed the
+                                efficacy of basing fault localization on the correlation between accessing a program
+                                location and the program run being faulty. We extend this observation to CPS, where
+                                runs can be assessed quantitatively for their degree of satisfaction/violation. We also
+                                focus on optimizing/analyzing model parameters. A common paradigm for storing model
+                                parameters is in the form of look-up tables. We exploit the special metric structure
+                                provided by the look-up table (assuming that the table represents a discretization of
+                                some nonlinear function). We have implemented this idea in a Matlab extension called
+                                Vajra that builds on top of the Breach toolbox. The tool also provides cool
+                                visualizations of likely bug locations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>, ICCPS 2018.
+                    <a href="https://ieeexplore.ieee.org/document/8443736"><i class="far fa-file-pdf"></i></a> &nbsp;
+                    <a href="./iccps18.bib/"><i class="fa fa-quote-left"></i></a> <br>
+                    </li>
+
+
+
+                </ol>
         </ul>
     </div> 
 </body>
