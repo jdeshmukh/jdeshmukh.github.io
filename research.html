@@ -4,23 +4,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-<!-- link rel="stylesheet" type="text/css" href="myhome.css"> -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/899bd38e88.js" crossorigin="anonymous"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homepage of Jyotirmoy V. Deshmukh (Jyo)</title>
+<title>Research Projects of the CPS-VIDA lab</title>
+<style>
+      .zoomA {
+        width: 600px;
+        height: auto;
+        /* ease | ease-in | ease-out | linear */
+        transition: transform ease-in-out 0.3s;
+      }
+      .zoomA:hover {
+        transform: scale(2.0);
+      }
+</style>
 </head>
 
 <body>
-    <div class="w3-sidebar w3-green w3-bar-block" style="width:20%">
-    <a href="./index.html" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-home"></i></a>
-    <a href="./research.html" class="w3-bar-item w3-khakhi w3-button">Research</a>
-    <a href="./Papers/publications.html" class="w3-bar-item w3-khakhi w3-button">Publications</a>
-    <a href="./teaching/index.html" class="w3-bar-item w3-khakhi w3-button">Teaching</a>
-    <a href="./group.html" class="w3-bar-item w3-khakhi w3-button">Group</a>
+    <div class="w3-sidebar w3-black w3-bar-block w3-collapse w3-card w3-animate-left" style="width:50px" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">&times;</button>
+        <a href="./index.html" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-home" title="Home"></i></a>
+        <a href="./research.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-flask" title="Research"></i></a>
+        <a href="./Papers/publications.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-newspaper" title="Publications"></i></a>
+        <a href="https://cps-vida.github.io/" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-users" title="Research Group"></i></a>
+        <a href="./teaching/index.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-chalkboard-teacher" title="Teaching"></i></a>
+        <a href="mailto:jyotirmoy.deshmukh@usc.edu" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-envelope" title="E-mail"></i></a>
+        <a href="https://github.com/jdeshmukh" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-github" title="Github"></i></a>
+        <a href="https://bitbucket.org/jdeshmukh" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-bitbucket" title="Bitbucket"></i></a>
+        <a href="skype:jyotirmoy.deshmukh?chat" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-skype" title="Skype"></i></a>
     </div>
-    
+    <div class="w3-bar w3-black" style="margin-left:2%">
+         <div class="w3-bar-item"> <a href="https://www.usc.edu"><img src="usc_logo.png" width=150px></img></a></div>
+         <div class="w3-bar-item"> <a href="https://viterbischool.usc.edu"><img src="viterbi_logo.png" width=130px></img></a></div>
+         <div class="w3-bar-item"> <a href="https://cps-vida.github.io"><img src="cpsvida_logo.png" width=110px></img></a></div>
+    </div>
     <!--
     <div id="nav">
     <ul class="topnav">
@@ -31,31 +50,121 @@
     <li><a href="teaching.html">Teaching</a></li>
     </ul>
     </div> -->
-    <div style="margin-left:25%">
-    <p> My research lies at the intersection of formal methods for 
-        reasoning about software and systems, foundations of cyber-physical 
-        systems (CPS), control theory, and mathematical logic. I am 
-        increasingly interested in reasoning about real-world CPS applications 
-        that use AI components trained with machine learning algorithms. Here
-        are some of the topics on which I am actively working:
-    </p>
+    <div style="margin-left:5%">
+        <div style="width:70%" class="w3-pale-yellow w3-card"> 
+            <H4>My research lies at the intersection of formal methods for 
+            reasoning about software and systems, foundations of cyber-physical 
+            systems (CPS), control theory, and mathematical logic. I am 
+            increasingly interested in reasoning about real-world CPS applications 
+            that use AI components trained with machine learning algorithms. Here
+            are some of the topics on which I am actively working:</H4>
+        </div>
 
-    <ul>
-    <li> Verification of Autonomous Cyber-Physical Systems.
+        <div class="w3-ul w3-hoverable w3-card-4 w3-pale-yellow w3-margin-top w3-margin-bottom w3-padding" style="width:70%;list-style-type:square;line-height:150%">
+        <H3> Learning from Time-series Data </H3> 
+        <img src="./logicallearning.png" width=50% class="w3-right zoomA" style="margin: 10px 10px 0px 0px;vertical-align:text-top"/>
+        <p>
+        Numerous machine learning techniques have been proposed for supervised
+        learning (classification), unsupervised learning (clustering),
+        causality analysis, and anomaly detection for time-series data.  These
+        techniques are very powerful, giving highly accurate results for large
+        data-sets. However, the results of learning may not always be
+        interpretable (e.g. <i>what do all data belonging to a particular
+        cluster have in common?</i> or <i>why does the decision
+        boundary separate two given examples</i>). We explore the
+        use of formal logics for supervised classification, unsupervised
+        learning, mining information from positive examples, and mining
+        requirements from cyber-physical system models.  Specifically, we focus
+        on learning Signal Temporal Logic formulas from data, and develop the
+        new formalism of Shape Expressions for these tasks.</p>
+        <H5>Publications</H5> 
+        <ul class=w3-ul" style="line-height:50%">
+        <li> Supervised classification:
+             <a href="./Papers/publications.html#hscc20">HSCC '20</a>
+        </li> 
+        <li> Unsupervised clustering:
+            <a href="./Papers/publications.html#cav17">CAV '17</a>,
+            <a href="./Papers/publications.html#cav17">RV '18</a>
+        </li>
+        <li> Mining Requirements:
+            <a href="./Papers/publications.html#hscc13">HSCC '13</a>,
+            <a href="./Papers/publications.html#hscc13">TCAD '15</a>,
+            <a href="./Papers/publications.html#hscc13">ICCPS '20</a>
+        </li>
+        <li> Shape Expressions:
+            <a href="./Papers/publications.html#rv19">RV '19</a>,
+            <a href="./Papers/publications.html#emsoft20">EMSOFT '20/TCAD '20</a>,
+            <a href="./Papers/publications.html#sttt20">STTT '20</a>
+        </li>
+        </ul>
+        <small><i> Supported by NSF Award: 1837131. FMitF: A Novel Framework
+                   for Learning Formal Abstractions and Causal Relations from Temporal
+                   Behaviors.
+               </i>
+        </small>
+        </div>
 
-    <li> Testing for Autonomous Cyber-Physical Systems and Embedded Control Systems.
+        <div class="w3-ul w3-hoverable w3-card-4 w3-pale-yellow w3-margin-top w3-margin-bottom w3-padding" style="width:70%;list-style-type:square;line-height:150%">
+        <H3> Runtime Monitoring </H3> 
+        <img src="./monitoring.png" width=50% class="w3-right zoomA" style="margin: 10px 10px 0px 0px;vertical-align:text-top"/>
+        <p>
+        Cyberphysical systems such as autonomous aerial and ground vehicles,
+        industrial control systems, medical devices, power grids and many
+        others are highly complex. In very limited scenarios, formal 
+        verification techniques can digest the scale and complexity of 
+        such techniques, and even then verification guarantees correctness
+        of a software model of the system, and not the actual deployed 
+        system. Runtime monitoring is a valuable tool to check dynamic
+        correctness of such systems, and coupled with runtime safety 
+        enforcement can be a powerful method to assure system correctness. 
+        In particular, we are interested in monitoring temporal and logical
+        requirements of such systems. There are several flavors of monitoring: 
+        offline or batch monitoring records temporal data about the system
+        behaviors and runs (asynchronously) runs monitoring algorithms on the 
+        recorded data. Online monitoring checks past-time or future-time
+        temporal logic formulas synchronously with the system. Predictive
+        monitoring or hidden state monitors check satisfaction/violation
+        of temporal logic formulas on hidden system states by only looking
+        at the observable behaviors. Finally, clairvoyant monitoring is 
+        about monitoring future-time temporal logic formulas on predicted
+        system behaviors. 
 
-    <li> Time-Series Analysis using Temporal Logic.
+        <H5>Publications</H5> 
+        <ul class=w3-ul" style="line-height:50%">
+        <li> Online Monitoring:
+             <a href="./Papers/publications.html#rv15">RV '15</a>
+             <a href="./Papers/publications.html#fmsd17">FMSD '17</a>
+        </li> 
+        <li> Clairvoyant Monitoring:
+            <a href="./Papers/publications.html#formats20">FORMATS '20</a>,
+        </li>
+        </ul>
+        <small><i> Supported by NSF Award CCF/SHF-1910088: Premonition: A Methodology for Predictive Monitoring with Probabilistic Guarantees
+               </i>
+        </small>
+        </div>
 
-    <li> Probabilistic Reasoning about Time-Series Data.
+        <div class="w3-ul w3-hoverable w3-card-4 w3-pale-yellow w3-margin-top w3-margin-bottom w3-padding" style="width:70%;list-style-type:square;line-height:150%">
+        <H3> Safe Intelligent Control </H3> 
+        <!-- img src="./ai_verification.svg" width=50% class="w3-right zoomA" style="margin: 10px 10px 0px 0px;vertical-align:text-top"/> -->
+        <p>
+        How do we design neural network controllers to respect high-level
+        requirements? How do we verify safety of neural network controllers? 
+        In this research, we tackle such problems. 
+        </p>
 
-    <li> Specification Languages for Cyber-Physical Systems.
-
-    <li> Monitoring Security of Cyber-Physical Systems.
-
-    </ul>
-
-    There shall be a day when there are better descriptions of above projects with pictures. Sadly, today is not that day.
+        <H5>Publications</H5> 
+        TBD
+        <ul class=w3-ul" style="line-height:100%">
+        <li> Verifying/Training Neural Network Controllers: TBD
+        </li> 
+        <li> Safe Deep Reinforcement Learning: TBD
+        </li>
+        </ul>
+        <small><i> Supported by a grant from Toyota R&amp;D
+               </i>
+        </small>
+        </div>
 
     </div>
 
