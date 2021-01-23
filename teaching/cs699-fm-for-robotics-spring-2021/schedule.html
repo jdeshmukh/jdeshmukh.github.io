@@ -11,149 +11,337 @@
 </head>
 
 <body>
-    <div style="margin-left:2%">
+    <div class="w3-sidebar w3-black w3-bar-block w3-collapse w3-card w3-animate-left" style="width:50px" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">&times;</button>
+        <a href="./index.html" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-home" title="Home"></i></a>
+        <a href="./research.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-flask" title="Research"></i></a>
+        <a href="./Papers/publications.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-newspaper" title="Publications"></i></a>
+        <a href="https://cps-vida.github.io/" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-users" title="Research Group"></i></a>
+        <a href="./teaching/index.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-chalkboard-teacher" title="Teaching"></i></a>
+        <a href="mailto:jyotirmoy.deshmukh@usc.edu" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-envelope" title="E-mail"></i></a>
+        <a href="https://github.com/jdeshmukh" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-github" title="Github"></i></a>
+        <a href="https://bitbucket.org/jdeshmukh" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-bitbucket" title="Bitbucket"></i></a>
+        <a href="skype:jyotirmoy.deshmukh?chat" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-skype" title="Skype"></i></a>
+    </div>
     <div class="w3-bar w3-black">
          <div class="w3-bar-item"> <a href="https://www.usc.edu"><img src="../../usc_logo.png" width=150px></img></a></div>
          <div class="w3-bar-item"> <a href="https://viterbischool.usc.edu"><img src="../../viterbi_logo.png" width=130px></img></a></div>
          <div class="w3-bar-item"> <a href="https://cps-vida.github.io"><img src="../../cpsvida_logo.png" width=110px></img></a></div>
     </div>
-    <div class="w3-bar w3-gray">
+    <div class="w3-bar w3-yellow" style="margin-left:3%">
         <div class="w3-bar-item"><a href="./index.html">Home</a></div>
         <div class="w3-bar-item"><a href="schedule.html">Schedule</a></div>
         <div class="w3-bar-item"><a href="resources.html">Resources</a></div>
         <div class="w3-bar-item"><a href="policies.html">Policies</a></div>
     </div>
     
-<table class="w3-card w3-border w3-striped w3-padding w3-margin" style="width:80%">
-<tr>
-<th>Date</th>
-<th>Topic</th>
-<th>Slides</th>
-<th>Deadlines</th>
-</tr>
+    <div style="margin-left:3%">
+    <table class="w3-card w3-border w3-striped w3-padding w3-margin" style="width:80%;background-color:fffba4">
 
-<tr>
-<td> 1/25 </td>
-<td> Course Overview, Project Discussion </td>
-<td> -- </td>
-<td> -- </td>
-</tr>
-
-<tr>
-<td> 2/1 </td>
-<td> Introduction to Formal Verification </td>
-<td> <a href="./https://mitpress.mit.edu/books/principles-model-checking">BKL book</a>:
-     <a href="./Papers/Principles_of_Model_Checking_Chapter_1_System_Verification.pdf">
-     Chapter 1
-     </a>
-     <a href="./Papers/Principles_of_Model_Checking_Chapter_3_Linear-Time_Properties.pdf">
-     Chapter 3
-     </a> (Only till 3.4),
-     <a href="./Papers/FormalVerificationForCPS-DeshmukhSankaranarayanan.pdf">
-     Survey FV for CPS
-     </a> (First 5 sections)
-</td> 
-</tr>
-
-<tr>
-<td> 2/8 </td>
-<td> Specifications and Specification Patterns </td>
-<td> <a href="./Papers/SpecificationPatternsForRoboticMissions-MenghiEtAl.pdf">Spec Patterns</a>,
-     <a href="./Papers/Translating Structured English to Robot Controllers.pdf">English to Specs</a>,
-     <a href="./Papers/MonitoringChapter.pdf">Spec-based RV</a> (pp. 136-161)
-</td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 2/15 </td>
-<td> Statistical Model Checking </td>
-<td> <a href="./Papers/LegayEtAlSMC.pdf">SMC Basics</a>,
-     <a href="./Papers/SurveyOfStatisticalModelChecking-AghaPalmskog.pdf">Survey of SMC</a>,
-     <a href="./Papers/StatisticalVerificationForLECPS-ZareiEtAl.pdf">Statistical Verification for LECPS</a>
-</td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 2/22 </td>
-<td> Probabilistic Model Checking and MDPs</td>
-<td> <a href="./Papers/The10000FacetsOfMDPMC-BaierEtAl.pdf">MDP MC</a>,
-     <a href="./Papers/PTA-MC-NormanEtAl.pdf">PTA MC</a>,
-     <a href="./Papers/PMCLandscape-Katoen.pdf">Prob MC</a>
+    <H3 style="margin-left:2%">CS 699: Formal Methods for Robotics, Schedule</H3>
+    <tr>
+    <th>Date</th>
+    <th>Topic</th>
+    <th>Reading Material</th>
+    <th>Deadlines</th>
+    </tr>
+    
+    <tr>
+    <td> 1/25 </td>
+    <td> Course Overview, Project Discussion </td>
+    <td> -- </td>
+    <td> -- </td>
+    </tr>
+    
+    <tr>
+    <td> 2/1 </td>
+    <td> Introduction to Formal Verification </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         Baier, Christel, and Joost-Pieter Katoen. Principles of Model Checking:
+         <a href="./Papers/Principles_of_Model_Checking_Chapter_1_System_Verification.pdf">
+         Ch. 1</a>,
+         <a href="./Papers/Principles_of_Model_Checking_Chapter_3_Linear-Time_Properties.pdf">
+         Ch. 3
+         </a>(3.1-3.4).
+         </li>
+         <li>
+         J. Deshmukh, S. Sankaranarayanan, 
+         <a href="./Papers/FormalVerificationForCPS-DeshmukhSankaranarayanan.pdf">
+         Formal Techniques for Verification and Testing of Cyber-Physical Systems
+         </a> (Sec. 1-5)
+         </li>
+         </div>
+    </td> 
+    </tr>
+    
+    <tr>
+    <td> 2/8 </td>
+    <td> Specifications </td>
+    <td>
+         <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         C. Menghi, et al.,
+         <a href="./Papers/SpecificationPatternsForRoboticMissions-MenghiEtAl.pdf">
+         Specification patterns for robotic missions</a>.
+         </li>
+         <li>
+         H.	Kress-Gazit, G. Fainekos, G. Pappas, 
+         <a href="./Papers/Translating Structured English to Robot Controllers.pdf">
+         Translating structured english to robot controllers</a>.
+         </li>
+         <li>
+         E. Bartocci, et al., 
+         <a href="./Papers/MonitoringChapter-BartocciEtAl.pdf">
+         Specification-based monitoring of cyber-physical systems: a survey on theory, tools and applications
+         </a> (pp. 136-161)
+         </li>
+         </div>
     </td>
-<td> <a href="./termpaper-guidelines.html">Paper Skeleton</a> Due </td>
-</tr>
-
-<tr>
-<td> 3/1 </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 3/8 </td>
-<td> </td>
-<td> </td>
-<td> <a href="./termpaper-guidelines.html">Skeleton Reviews</a> Due </td>
-</tr>
-
-<tr>
-<td> 3/15 </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 3/22 </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 3/29 </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 4/5 </td>
-<td> </td>
-<td> </td>
-<td> <a href="./termpaper-guidelines.html">Almost-Paper</a> Submission Deadline </td>
-</tr>
-
-<tr>
-<td> 4/12 </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td> 4/19 </td>
-<td> </td>
-<td> </td>
-<td> <a href="./termpaper-guidelines.html">Peer Reviews</a> Due </td>
-</tr>
-
-<tr>
-<td> 4/26 </td>
-<td> </td>
-<td> </td>
-<td style> Project Presentations </td>
-</tr>
-
-<tr>
-<td> 5/12 </td>
-<td> </td>
-<td> </td>
-<td style="color:red"> <a href="./termpaper-guidelines.html">Polished Final Paper</a> Due </td>
-</tr>
-
-</table>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 2/15 </td>
+    <td> Statistical Model Checking </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li> A. Legay, et al.,
+         <a href="./Papers/SMC-LegayEtAl.pdf">Statistical Model Checking</a>.
+         </li>
+         <li> G. Agha, K. Palmskog,
+         <a href="./Papers/SurveyOfStatisticalModelChecking-AghaPalmskog.pdf">A Survey of Statistical Model Checking</a>.
+         </li>
+         <li> M. Zarei, Y. Wang, M. Pajic, 
+         <a href="./Papers/StatisticalVerificationForLECPS-ZareiEtAl.pdf">Statistical Verification of Learning-Based Cyber-Physical Systems</a>.
+         </li>
+         </div>
+    </td>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 2/22 </td>
+    <td> Probabilistic Model Checking </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li> C. Baier, H. Hermanns, J.-P. Katoen, 
+         <a href="./Papers/The10000FacetsOfMDPMC-BaierEtAl.pdf">The 10,000 Facetsof MDP Model Checking</a>.
+         </li>
+         <li> 
+         G. Norman, D. Parker, J. Sproston,
+         <a href="./Papers/PTA-MC-NormanEtAl.pdf">Model checking for probabilistic timed automata</a>.
+         </li>
+         <li> J.-P. Katoen,
+         <a href="./Papers/PMCLandscape-Katoen.pdf">The Probabilistic Model Checking Landscape</a>.
+         </li> 
+         </div>
+    </td>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 3/1 </td>
+    <td> Control Theory &amp; Robotics </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li> X. Xu et al.,
+         <a href="./Papers/RobustnessOfCBFsForSafetyCriticalControl-XuEtAl.pdf">Robustness of Control Barrier Functions for Safety Critical Control</a>.
+         </li>
+         <li> L. Wang, A. Ames, M. Egerstedt, 
+         <a href="./Papers/SafetyBarrierCertificatesForCollisionFreeMultiRobotSystems-WangEtAl.pdf">
+         Safety Barrier Certificates for Collisions-Free Multirobot Systems</a>.
+         </li>
+         <li> J. Cort&eacute;s, M. Egerstedt, 
+         <a href="./Papers/CoordinatedControlofMultiRobotSystemsSurvey-CortesEgerstedt.pdf">
+         Coordinated Control of Multi-Robot Systems: A Survey</a>.
+         </li>
+         </div>
+    </td>
+    <td> <a href="./termpaper-guidelines.html">Paper Skeleton</a> Due</td>
+    </tr>
+    
+    <tr>
+    <td> 3/8 </td>
+    <td> Reactive Synthesis &amp; Robotics </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li> R. Bloem, K. Chatterjee, B. Jobstmann, 
+         <a href="./Papers/GraphGamesAndReactiveSynthesis-BloemEtAl.pdf ">
+         Graph Games and Reactive Synthesis</a>.
+         </li>
+         <li> 
+         H. Kress-Gazit, M. Lahijanian, V. Raman,
+         <a href="./Papers/SynthesisForRobots-Kress-GazitEtAl.pdf">
+         Synthesis for Robots: Guarantees and Feedback for Robot Behavior</a>.
+         </li>
+         </div>
+    </td>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 3/15 </td>
+    <td> Robot Verification Survey and Runtime Verification </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li> M. Luckcuck et al.,
+         <a href="./Papers/FormalSpecificationAndVerificationOfRobotsSurvey-LuckcuckEtAl.pdf">
+         Formal Specification and Verification of Autonomous Robotic Systems: A Survey</a>.
+         </li>
+         <li> A. Desai, T. Dreossi, S. Seshia, 
+         <a href="./Papers/CombiningModelCheckingAndRV-DesaiEtAl.pdf">
+         Combining Model Checking and Runtime Verification for Safe Robotics
+         </a>.
+         </li>
+         </div>
+    </td>
+    <td> <a href="./termpaper-guidelines.html">Skeleton Reviews</a> Due </td>
+    </tr>
+    
+    <tr>
+    <td> 3/22 </td>
+    <td> Temporal Logic &amp; Planning </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         Lahijanian et al.,
+         <a href="./Papers/QuantTLPlanning-LahijanianEtAl.pdf">
+         This Time the Robot Settles for a Cost: A Quantitative Approach to 
+         Temporal Logic Planning with Partial Satisfaction
+         </a>.
+         </li>
+    
+         <li>
+         G. Fainekos et al.,
+         <a href=".\Papers\TemporalLogicMotionPlanning-FainekosEtAl.pdf">
+         Temporal logic motion planning for dynamic robots
+         </a>.
+         </li>
+    
+         <li>
+         M. Guo, M. Zavlanos,
+         <a href=".\Papers\ProbabilisticMotionPlanning-GuoEtAl.pdf">
+         Probabilistic Motion Planning Under Temporal Tasks and Soft Constraints
+         </a>
+         </li>
+         </div>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 3/29 </td>
+    <td> Reachability-based Planning </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         J. Ding et al.,
+         <a href=".\Papers\ReachabilityBasedPlanning-DingEtAl.pdf">
+         Reachability-based Synthesis of Feedback Policies for Motion Planning Under Bounded Disturbances
+         </a>.
+         </li>
+         
+         <li>
+         J. Chen et al.,
+         <a href=".\Papers\ScalablePlanningNonlinearDynamics-LiEtAl.pdf">
+         Scalable and Safe Multi-Agent Motion Planning with Nonlinear Dynamics and Bounded Disturbances
+         </a>
+         </li>
+         </div>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 4/5 </td>
+    <td> Reinforcement Learning from Temporal Logic, Reward Shaping </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         <a href=".\Papers\OmegaRegularObjectivesInModelFreeRL-HahnEtAl.pdf">
+         Omega-Regular Objectives in Model-Free Reinforcement Learning
+         </a>
+         </li>
+         <li>
+         <a href=".\Papers\ModelFreeRLforStochasticGameswithLTL-BozkurtEtAl.pdf">
+         Model-Free Reinforcement Learning for Stochastic Games with Linear Temporal Logic Objectives
+         </a>.
+         </li>
+         <li>
+    
+         <li>
+         C. Neary et al.,
+         <a href=".\Papers\RewardMachines-NearyEtAl.pdf">
+         Reward Machines for Cooperative Multi-Agent Reinforcement Learning
+         </a>.
+         </li>
+         </div>
+    </td>
+    <td> <a href="./termpaper-guidelines.html">Almost-Paper</a> Submission Deadline </td>
+    </tr>
+    
+    <tr>
+    <td> 4/12 </td>
+    <td> Safe Reinforcement Learning </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         N. Fulton, A. Platzer,
+         <a href=".\Papers\VerifiablySafeOff-ModelFreeRL-FultonEtAl.pdf">
+         Verifiably Safe Off-Model Reinforcement Learning </a>. 
+         </li>
+        
+         <li>
+         N. Jansen et al.,
+         <a href=".\Papers\SafeRLUsingProbShields-JansenEtAl.pdf">
+         Safe Reinforcement Learning Using Probabilistic Shields
+         </a>.
+         </li>
+        </div>
+    </td>
+    <td> </td>
+    </tr>
+    
+    <tr>
+    <td> 4/19 </td>
+    <td> Guarantees in Reinforcement Learning </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         G. Anderson et al., 
+         <a href=".\Papers\NeuroSymbolicRL-AndersonEtAl.pdf">
+         Neurosymbolic Reinforcement Learning with Formally Verified Exploration
+         </a>.
+         </li>
+    
+         <li> 
+         L&uuml;tjens et al.,
+         <a href=".\Papers\CertifiedAdversarialRobustness-LutjensEtAl.pdf">
+         Certified adversarial robustness for deep reinforcement learning
+         </a>.
+         </li>
+         </div>
+    </td>
+    <td> <a href="./termpaper-guidelines.html">Peer Reviews</a> Due </td>
+    </tr>
+    
+    <tr>
+    <td> 4/26 </td>
+    <td> Learning (Policies, Specs) from Demonstrations </td>
+    <td> <div class="w3-ul w3-margin" style="list-style-type:square">
+         <li>
+         D. Kasenberg et al.,
+         <a href=".\Papers\InterpretableApprenticeshipLearning-KasenbergEtAl.pdf">
+         Interpretable apprenticeship learning with temporal logic specifications
+         </a>
+         </li>
+    
+         <li>
+         M. Vazquez-Chanlatte et al.,
+         <a href=".\Papers\LearningTaskSpecificationsFromDemonstrations-Vazquez-ChanlatteEtAl.pdf">
+         Learning Task Specifications from Demonstrations
+         </a>
+         </li>
+         </div>
+    </td>
+    <td style> Project Presentations </td>
+    </tr>
+    
+    <tr>
+    <td> 5/12 </td>
+    <td> </td>
+    <td> </td>
+    <td style="color:red"> <a href="./termpaper-guidelines.html">Polished Final Paper</a> Due </td>
+    </tr>
+    </table>
+    </div>
 </body></html>
