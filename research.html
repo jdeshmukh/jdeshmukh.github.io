@@ -23,8 +23,9 @@
 </head>
 
 <body>
-    <div class="w3-sidebar w3-black w3-bar-block w3-collapse w3-card w3-animate-left" style="width:50px" id="mySidebar">
+    <div class="w3-sidebar w3-black w3-bar-block w3-collapse w3-card w3-animate-left" style="width:130px" id="mySidebar">
         <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">&times;</button>
+        <!--
         <a href="./index.html" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-home" title="Home"></i></a>
         <a href="./research.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-flask" title="Research"></i></a>
         <a href="./Papers/publications.html" class="w3-bar-item w3-khakhi w3-button"><i class="fas fa-newspaper" title="Publications"></i></a>
@@ -33,9 +34,17 @@
         <a href="mailto:jyotirmoy.deshmukh@usc.edu" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-envelope" title="E-mail"></i></a>
         <a href="https://github.com/jdeshmukh" class="w3-bar-item w3-khakhi w3-button"><i class="fa fa-github" title="Github"></i></a>
         <a href="https://bitbucket.org/jdeshmukh" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-bitbucket" title="Bitbucket"></i></a>
-        <a href="skype:jyotirmoy.deshmukh?chat" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-skype" title="Skype"></i></a>
+        <a href="skype:jyotirmoy.deshmukh?chat" class="w3-bar-item w3-khakhi w3-button"><i class="fab fa-skype" title="Skype"></i></a>-->
+        <a href="./index.html" class="w3-bar-item w3-khakhi w3-button">Home</a>
+        <a href="./research.html" class="w3-bar-item w3-khakhi w3-button">Research</a>
+        <a href="./Papers/publications.html" class="w3-bar-item w3-khakhi w3-button">Publications</i></a>
+        <a href="https://cps-vida.github.io/" class="w3-bar-item w3-khakhi w3-button">Group</a>
+        <a href="./teaching/index.html" class="w3-bar-item w3-khakhi w3-button">Teaching</a>
+        <a href="mailto:jyotirmoy.deshmukh@usc.edu" class="w3-bar-item w3-khakhi w3-button">E-mail</a>
+        <a href="https://github.com/jdeshmukh" class="w3-bar-item w3-khakhi w3-button">Github</a>
+        <a href="https://bitbucket.org/jdeshmukh" class="w3-bar-item w3-khakhi w3-button">Bitbucket</a>
     </div>
-    <div class="w3-bar w3-black" style="margin-left:2%">
+    <div class="w3-bar w3-black" style="margin-left:5%">
          <div class="w3-bar-item"> <a href="https://www.usc.edu"><img src="usc_logo.png" width=150px></img></a></div>
          <div class="w3-bar-item"> <a href="https://viterbischool.usc.edu"><img src="viterbi_logo.png" width=130px></img></a></div>
          <div class="w3-bar-item"> <a href="https://cps-vida.github.io"><img src="cpsvida_logo.png" width=110px></img></a></div>
@@ -51,7 +60,7 @@
     </ul>
     </div> -->
     <div style="margin-left:10%">
-        <div style="width:70%" class="w3-pale-yellow w3-card"> 
+        <div style="width:70%" class="w3-pale-yellow w3-card w3-padding"> 
             <H4>My research lies at the intersection of formal methods for 
             reasoning about software and systems, foundations of cyber-physical 
             systems (CPS), control theory, and mathematical logic. I am 
@@ -59,6 +68,43 @@
             that use AI components trained with machine learning algorithms. Here
             are some of the topics on which I am actively working:</H4>
         </div>
+        <div class="w3-ul w3-hoverable w3-card-4 w3-pale-yellow w3-margin-top w3-margin-bottom w3-padding" style="width:70%;list-style-type:square;line-height:150%">
+        <H3> Safe Intelligent Control </H3> 
+        <img src="./overview.png" width=25% class="w3-right zoomA" style="margin: 10px 10px 0px 0px;vertical-align:text-top"/>
+        <p>
+        (Deep) Reinforcement Learning consists of a promising new class of techniques
+        that aspire to solve control problems for highly uncertain and nonlinear 
+        environments, as well as train agents that can rival human decision-making.
+        RL techniques fundamentally depend on defining a reward function that maps
+        every agent state (or configuration) to some value. RL techniques assume 
+        that reward functions express desired behavior; i.e. agent policies that 
+        maximize rewards correspond to agent behaviors that are desired. However,
+        for safety-critical system, ill-defined rewards can lead to behaviors that
+        maximize rewards yet are undesirable or unsafe. We explore the problem of
+        defining high-level formal specifications for systems and automatically 
+        inferring state-based reward functions from these. While these new class of
+        RL algorithms that we will invent can certainly push the system towards 
+        maximizing rewards (and ergo satisfying the intended specification), there
+        is no guarantee in deep RL of obtaining provably correct policies. A part
+        of this project will explore formal methods and statistical approaches to
+        prove the correctness of a discovered RL policy.
+        </p>
+
+        <H5>Publications</H5> 
+        <ul class=w3-ul" style="line-height:100%">
+        <li> Verifying/Training Neural Network Controllers: 
+        <a href="./Papers/iccad2019.pdf">ICCAD 2019</a>, &nbsp;
+        <a href="https://dl.acm.org/doi/10.1145/3195970.3199852">DAC 2018</a>
+        </li> 
+        <li> Safe Deep Reinforcement Learning: 
+        <a href=".\Papers\iros19.pdf">IROS 2019</a>,&nbsp;<a href="https://arxiv.org/abs/2011.04950">Manuscript</a>
+        </li>
+        </ul>
+        <small><i> Supported by a grant from Toyota R&amp;D, and the NSF CAREER Award
+               </i>
+        </small>
+        </div>
+
 
         <div class="w3-ul w3-hoverable w3-card-4 w3-pale-yellow w3-margin-top w3-margin-bottom w3-padding" style="width:70%;list-style-type:square;line-height:150%">
         <H3> Learning from Time-series Data </H3> 
@@ -80,21 +126,21 @@
         <H5>Publications</H5> 
         <ul class=w3-ul" style="line-height:50%">
         <li> Supervised classification:
-             <a href="./Papers/publications.html#hscc20">HSCC '20</a>
+            <a href="./Papers/hscc2020.pdf">HSCC '20</a>
         </li> 
         <li> Unsupervised clustering:
-            <a href="./Papers/publications.html#cav17">CAV '17</a>,
-            <a href="./Papers/publications.html#cav17">RV '18</a>
+            <a href="https://link.springer.com/chapter/10.1007%2F978-3-319-63387-9_15">CAV '17</a>,&nbsp;
+            <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-03769-7_22">RV '18</a>
         </li>
         <li> Mining Requirements:
-            <a href="./Papers/publications.html#hscc13">HSCC '13</a>,
-            <a href="./Papers/publications.html#hscc13">TCAD '15</a>,
-            <a href="./Papers/publications.html#hscc13">ICCPS '20</a>
+            <a href="./Papers/hscc13.pdf">HSCC '13</a>,
+            <a href="https://ieeexplore.ieee.org/document/7084172">TCAD '15</a>,&nbsp;
+            <a href="https://ieeexplore.ieee.org/document/9096037">ICCPS '20</a>
         </li>
         <li> Shape Expressions:
-            <a href="./Papers/publications.html#rv19">RV '19</a>,
-            <a href="./Papers/publications.html#emsoft20">EMSOFT '20/TCAD '20</a>,
-            <a href="./Papers/publications.html#sttt20">STTT '20</a>
+            <a href="./Papers/rv19.pdf">RV '19</a>,&nbsp;
+            <a href="https://ieeexplore-ieee-org/document/9211424">EMSOFT '20/TCAD '20</a>,&nbsp;
+            <a href="./Papers/sttt21.pdf">STTT '21 (to appear)</a>
         </li>
         </ul>
         <small><i> Supported by NSF Award: 1837131. FMitF: A Novel Framework
@@ -132,11 +178,11 @@
         <H5>Publications</H5> 
         <ul class=w3-ul" style="line-height:50%">
         <li> Online Monitoring:
-             <a href="./Papers/publications.html#rv15">RV '15</a>
-             <a href="./Papers/publications.html#fmsd17">FMSD '17</a>
+             <a href="./Papers/rv15.pdf">RV '15</a>
+             <a href="./https://link.springer.com/content/pdf/10.1007/s10703-017-0286-7.pdf">FMSD '17</a>
         </li> 
         <li> Clairvoyant Monitoring:
-            <a href="./Papers/publications.html#formats20">FORMATS '20</a>,
+            <a href="./Papers/formats2020.pdf.">FORMATS '20</a>,
         </li>
         </ul>
         <small><i> Supported by NSF Award CCF/SHF-1910088: Premonition: A Methodology for Predictive Monitoring with Probabilistic Guarantees
@@ -144,27 +190,7 @@
         </small>
         </div>
 
-        <div class="w3-ul w3-hoverable w3-card-4 w3-pale-yellow w3-margin-top w3-margin-bottom w3-padding" style="width:70%;list-style-type:square;line-height:150%">
-        <H3> Safe Intelligent Control </H3> 
-        <!-- img src="./ai_verification.svg" width=50% class="w3-right zoomA" style="margin: 10px 10px 0px 0px;vertical-align:text-top"/> -->
-        <p>
-        How do we design neural network controllers to respect high-level
-        requirements? How do we verify safety of neural network controllers? 
-        In this research, we tackle such problems. 
-        </p>
-
-        <H5>Publications</H5> 
-        TBD
-        <ul class=w3-ul" style="line-height:100%">
-        <li> Verifying/Training Neural Network Controllers: TBD
-        </li> 
-        <li> Safe Deep Reinforcement Learning: TBD
-        </li>
-        </ul>
-        <small><i> Supported by a grant from Toyota R&amp;D
-               </i>
-        </small>
-        </div>
+      
 
     </div>
 
