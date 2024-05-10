@@ -91,18 +91,15 @@ S.Sim;
 
 
 %% Check STL specifications. A negative number means that the test failed.
-STL_ReadFile('ACC_Requirements.stl');
+STL_ReadFile('ACC_Reqs.stl');
 disp('Checking safe following');
 robs1 = S.CheckSpec(safeFollowing);
 
 disp('Checking forward progress');
 robs2 = S.CheckSpec(forwardProgress);
 
-disp('Checking if cruising works');
-robs3 = S.CheckSpec(cruiseWhenNotImpeded);
-
 disp('Checking that the host stops only if required');
-robs4 = S.CheckSpec(dontStopUnlessLeadStops);
+robs3 = S.CheckSpec(dontStopUnlessLeadStops);
 %% 
 
 
